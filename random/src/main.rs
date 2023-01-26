@@ -12,6 +12,9 @@ struct Cli {
 enum Commands {
     #[clap(version = "1.0", author = "Noah Gift")]
     Flip {},
+    FlipN {
+        n: u32,
+    },
 }
 
 fn main() {
@@ -19,6 +22,10 @@ fn main() {
     match args.command {
         Some(Commands::Flip {}) => {
             let result = random::coin();
+            println!("{}", result);
+        }
+        Some(Commands::FlipN { n }) => {
+            let result = random::coin_n(n);
             println!("{}", result);
         }
         None => println!("No subcommand was used"),
