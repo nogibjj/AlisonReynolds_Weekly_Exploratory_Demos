@@ -4,6 +4,9 @@ This repository will hold my weekly demos for exploring rust and cloud computing
 ## Week 2
 In week 2 I created a command line tool that interacts with the rand crate. There are two functions: coin, which returns the output of a coin flip (heads if the random boolean output is 1, tails otherwise) and coin_n, which takes a integer input n and flips that many coins, returning the proportion of heads.
 
+## Week 2
+In week 3 I create a plotting function that generates two vectors with 100 random values between -100 and 100 and plots them on a scatter plot. It then saves the scatter plot to a .png file that can be viewed. 
+
 ## References
 
 * [rust-mlops-template](https://github.com/nogibjj/rust-mlops-template)

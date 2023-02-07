@@ -10,7 +10,7 @@ struct Cli {
 
 #[derive(Parser)]
 enum Commands {
-    #[clap(version = "1.0", author = "Noah Gift")]
+    #[clap(version = "1.0", author = "Alison")]
     Flip {},
     FlipN {
         n: u32,
