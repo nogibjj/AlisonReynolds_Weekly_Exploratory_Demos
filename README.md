@@ -12,6 +12,14 @@ plotting: In week 3 I create a plotting function that generates two vectors with
 
 To run the function, cd into the plotting directory and run `cargo run`
 
+## Week 4
+temperature: In week 4 I created a command line tool that converts temperatures between Farenheit, Celsius, and Kelvin. When running the module, the user must specify what measurement system they are starting in (see below for how to run it in the command line). It will then ask the user for the value to convert. Then the module calls the appropriate function to convert the value into the other two measurement systems and returns the results. 
+
+To run the function, cd into the temperature directory. 
+If you'd like to convert a temperature from Farenheit, run `cargo run -- farenheit`
+If you'd like to convert a temperature from Celsius, run `cargo run -- celsius`
+If you'd like to convert a temperature from Kelvin, run `cargo run -- kelvin`
+
 ## References
 
 * [rust-mlops-template](https://github.com/nogibjj/rust-mlops-template)

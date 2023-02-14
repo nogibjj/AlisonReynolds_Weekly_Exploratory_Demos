@@ -1,6 +1,6 @@
 use std::io;
 
-// function to ask for a temperature in fahrenheit
+// this function asks the user for a temperature in fahrenheit
 pub fn ask_for_temperature_farenheit() -> f64 {
     // create a new string
     let mut input = String::new();
@@ -16,7 +16,7 @@ pub fn ask_for_temperature_farenheit() -> f64 {
     temp
 }
 
-// function to ask the user for a temperature in kelvin
+// this function asks the user for a temperature in kelvin
 pub fn ask_for_temperature_kelvin() -> f64 {
     // create a new string
     let mut input = String::new();
@@ -32,7 +32,7 @@ pub fn ask_for_temperature_kelvin() -> f64 {
     temp
 }
 
-// function to ask for a temperature in celsius
+// this function asks the user for a temperature in celsius
 pub fn ask_for_temperature_celsius() -> f64 {
     // create a new string
     let mut input = String::new();
@@ -48,7 +48,7 @@ pub fn ask_for_temperature_celsius() -> f64 {
     temp
 }
 
-// function to convert fahrenheit to celsius and kelvin
+// this function converts a temperature from fahrenheit to celsius and kelvin
 pub fn fahrenheit_to_celsius_and_kelvin(temp: f64) -> (f64, f64) {
     // convert the temperature
     let celsius = (temp - 32.0) * 5.0 / 9.0;
@@ -57,7 +57,7 @@ pub fn fahrenheit_to_celsius_and_kelvin(temp: f64) -> (f64, f64) {
     (celsius, kelvin)
 }
 
-// function to convert celsius to fahrenheit and kelvin
+// this function converts a temperature from celsius to fahrenheit and kelvin
 pub fn celsius_to_fahrenheit_and_kelvin(temp: f64) -> (f64, f64) {
     // convert the temperature
     let fahrenheit = (temp * 9.0 / 5.0) + 32.0;
@@ -66,7 +66,7 @@ pub fn celsius_to_fahrenheit_and_kelvin(temp: f64) -> (f64, f64) {
     (fahrenheit, kelvin)
 }
 
-// function to convert kelvin to fahrenheit and celsius
+// this function converts a temperature from kelvin to fahrenheit and celsius
 pub fn kelvin_to_fahrenheit_and_celsius(temp: f64) -> (f64, f64) {
     // convert the temperature
     let celsius = temp - 273.15;
