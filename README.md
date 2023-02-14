@@ -7,7 +7,7 @@ random: In week 2 I created a command line tool that interacts with the rand cra
 To run a single coin flip, cd into the random directory and run `cargo run -- flip`
 To run 15 coin flips and generate the proportion of heads, cd into the random directory and run `cargo run -- flip-n --n 15`
 
-## Week 2
+## Week 3
 plotting: In week 3 I create a plotting function that generates two vectors with 100 random values between -100 and 100 and plots them on a scatter plot. It then saves the scatter plot to a .png file that can be viewed. This function uses the plotters crate to generate the plot and the rand crate to generate the vectors. After saving the plot, it prints "Plot finished" so the user knows that the plot is ready to be viewed.
 
 To run the function, cd into the plotting directory and run `cargo run`
