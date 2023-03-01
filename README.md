@@ -20,6 +20,20 @@ If you'd like to convert a temperature from Farenheit, run `cargo run -- farenhe
 If you'd like to convert a temperature from Celsius, run `cargo run -- celsius`
 If you'd like to convert a temperature from Kelvin, run `cargo run -- kelvin`
 
+## Week 5
+how_long: In week 5 I created a command line tool that take a string of either a date or time as the input and returns the nicely formatted duration that has passed since the time using the Human Time crate. There are four functions in the module: the first two take either the date or string input and return a date time or naive time output, and the second two take the date time or naive time input, calculate the duration that has passed, and then returns a nicely formatted string. 
+
+To run the function, cd into the how_long directory. 
+If you'd like to find the duration passed from a date, run `cargo run -- date "%Y-%m-%d"`
+If you'd like to find the duration passed from a time, run `cargo run -- time "%H:%M:%S"`
+
+## Week 6
+case_convert: In week 6 I created a command line tool that reads in a .txt file and the user can choose a case to convert it to. There are five options: snake case, camel case, title case, train case, and kebab case. The lib file has functions to read in the .txt file and convert the text into each of the cases. Then the main function checks which case has been chosen and saves the converted text into a new .txt file.
+
+To run the function, cd into the case_convert directory and run `cargo run -- convert "name of case"`
+
+
+
 ## References
 
 * [rust-mlops-template](https://github.com/nogibjj/rust-mlops-template)
