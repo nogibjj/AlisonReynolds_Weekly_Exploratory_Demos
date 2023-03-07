@@ -32,6 +32,11 @@ case_convert: In week 6 I created a command line tool that reads in a .txt file 
 
 To run the function, cd into the case_convert directory and run `cargo run -- convert "name of case"`
 
+## Week 7
+time_to_eat: In week 7 I created a microservice that gives the user a food to eat based on the meal they enter. The lib.rs file contains lists of the most common breakfast, lunch, snack, and dinner foods in the U.S. and functions to randomly generate one of the entries. The main.rs file contains the framework to run the actix service. The home page has a welcome message, and the user can add /breakfast, /lunch, /snack, or /dinner to get a food suggestion for that meal. 
+
+To run the function, cd into the time_to_eat directory and run `cargo run`
+
 
 
 ## References
