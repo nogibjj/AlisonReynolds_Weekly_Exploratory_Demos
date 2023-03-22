@@ -37,6 +37,10 @@ time_to_eat: In week 7 I created a microservice that gives the user a food to ea
 
 To run the function, cd into the time_to_eat directory and run `cargo run`
 
+## Week 8
+madlibs: In week 8 I created a command line tool to generate a madlib. A madlib is a sentence or a short story where the user is asked for a collection of words (noun, verb, adjective, etc.) and the words are used to fill in missing pieces of the story. I used the clap crate build the command line tool. The user can call the create command and supply a school subject, building name, animal, verb, and adjective and the resulting story is printed out. 
+
+To run the function, cd into the madlibs directory and run `cargo run -- create --subject subject_name --building building_name --animal animal_name --verb verb_name --adjective adjective_name`
 
 
 ## References
