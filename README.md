@@ -46,6 +46,12 @@ To run the function, cd into the madlibs directory and run `cargo run -- create 
 random_distroless: In week 9 I created a distroless actix web application based off of the random coin flipper I created in week 2. I converted the command line tool into an actix web server with four pages: "/" which prints a welcome message, "/flip" which prints the result of flipping a single coin, "/flip10" which presents the proportion of heads from 10 coin flips, "/flip100" which presents the proportion of heads from 100 coin flips, and "/flip1000" which presents the proportion of heads from 1,000 coin flips. Then I created a Dockerfile for it that uses distroless to build the docker image (which saves a lot of memory). 
    
 To run the function, cd into the random_distroless directory and run `cargo run`.
+
+## Week 10
+decision_tree: In week 10 I created an algorithm that builds a decision tree for classification using the wine quality dataset from the linfa crate. The lib.rs file has the function decision_tree that takes the split criterion (gini or entropy) as an argument. It then reads in the data, splits it into train and test sets, trains the model, finds the prediction for the test set, and prints the resulting confusion matrix and accuracy. If an invalid split criterion is given, the function prints a helpful message. The main.rs file sets up the command line framework and calls the decision tree function. If no command is given, it prints a helpful message.
+    
+To run the function, cd into the decision_tree directory and run `cargo run -- tree "gini"` or `cargo run -- tree "entropy"`.
+
 ## References
 
 * [rust-mlops-template](https://github.com/nogibjj/rust-mlops-template)

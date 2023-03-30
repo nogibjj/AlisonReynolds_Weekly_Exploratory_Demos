@@ -1,0 +1,12 @@
+[package]
+name = "dt_classification"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.1.1", features = ["derive"] }
+linfa = "0.6.1"
+linfa-datasets = { version = "0.6.1", features = ["winequality"] }
+linfa-trees = "0.6.1"
