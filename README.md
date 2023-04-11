@@ -55,7 +55,7 @@ To run the function, cd into the decision_tree directory and run `cargo run -- t
 ## Week 11
 svm: In week 11 I continued trying out machine learning methods using the linfa crate, this time with Support Vector Machines. The main.rs file holds all the code for this mini project. I first bring in the linfa and linfa-svm crates. I load the wine quality dataset from linfa (the same one used with decision trees in week 10) and split the data into train and test sets. Then I reweight the data (since there are more low quality wines then high quality wines) and use a Gaussian kernel with a mean of 75. After training on the model, I use it to predict and rename the labels to be more informative. Finally I print out a confusion matrix and the accuracy.
     
-To run the function, cd into the svm directory and run `cargo run `.
+To run the function, cd into the svm directory and run `cargo run`.
 
 ## References
 
